@@ -1,11 +1,12 @@
-const URL="https://java-api-spring-bot.herokuapp.com/validacpf?cpf="
+const URL="https://itau-turma6a-flavia.herokuapp.com/validacpf?cpf="
 function validar(){
 
 	var txtCPF = document.getElementById("txtCpf").value;
 
 	fetch(URL+txtCPF)
-	   .then(res=>res.json())
-	   .then(res=>verifica(res))
+	  .then(res=>res.json())
+	  .then(res=>verifica(res))
+
 }
 
 function verifica(res){
